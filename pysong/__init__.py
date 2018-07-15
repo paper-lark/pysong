@@ -118,14 +118,13 @@ def flatten(block):
 
 
 if __name__ == '__main__':
-    query = input('Enter a piece of the song that you know:\n').strip()
-    print('Don\'t worry, we are working to get the title of your song now...')
+    query = input('\nEnter a piece of the song that you know:\n').strip()
+    print('\nDon\'t worry, we are searching for the song now..')
 
     # Fetch hit matching API
     try:
         res = fetchJSON(
             getSearchUrl(query))
-        print('Halfway there...')
     except:
         print('Failed to connect to the server')
         print("Unexpected error:", sys.exc_info()[0])
