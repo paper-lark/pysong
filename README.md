@@ -2,7 +2,36 @@
 
 PySong is a small Python script that given a line from a song searches for the matching song and prints its lyrics.
 
-## Example
+# Installation
+
+In order to run the script you need a Python 3 interpreter and a package manager. You can check if they are installed by executing the following commands in the terminal:
+
+```bash
+python3 --version
+pip3 --version
+```
+
+Once you have these, install dependencies using `pip` or `pip3`:
+
+```bash
+pip3 install beautifulsoup4 lxml requests
+```
+
+In addition, you might want to copy the script to a folder in your `PATH`. If you are using Linux or macOS, the command will be similar to the following:
+
+```bash
+mv pysong.py /usr/local/bin
+```
+
+## Usage
+
+In order to run the script, execute:
+
+```bash
+python3 pysong.py
+```
+
+You will be asked for a line of the song to search with:
 
 ```
 Enter a piece of the song that you know:
@@ -106,19 +135,6 @@ Songs found:
 3) Enemies (Full Text) by Anton Chekhov
 ```
 
-# Installation
+## License
 
-In order to run the script you need a python3 interpreter and a package manager. You can check if they are installed by executing the following commands in the terminal:
-
-```bash
-python3 --version
-pip3 --version
-```
-
-Once you have these, install `lyrics` package using `pip` or `pip3`:
-
-```bash
-pip install lyrics
-```
-
-## Usage
+PySong is available under terms of MIT license. See `LICENSE` for details.
